@@ -1,3 +1,5 @@
+Steps for Airflow installation, setup and creating a very simple data pipeline based on udemy tutorial by Marc.
+
 ### Installation & Quick Start 
 
 1. Create a python virtual environment to have an isolated environment for this exercise
@@ -39,7 +41,6 @@ airflow scheduler
 > Go to localhost:8080 in the browser and use the admin account you just created to login.
 
 ### Airflow User Data Pipeline
-Steps for Airflow installation, setup and creating a simple data pipeline based on udemy tutorial by Marc.
 
 ![dag](png/user_processing.PNG)
 > Structure of the Airflow DAG
