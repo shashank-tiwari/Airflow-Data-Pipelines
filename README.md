@@ -40,12 +40,6 @@ airflow scheduler
 ```
 > Go to localhost:8080 in the browser and use the admin account you just created to login.
 
-### Airflow User Data Pipeline
-
-![dag](png/user_processing.PNG)
-> Structure of the Airflow DAG
-
-
 ### Configure Local Executor 
 To execute multiple tasks in parallel where a task becomes a sub process in a single machine.
 
@@ -99,3 +93,17 @@ airflow webserver
 airflow scheduler
 ```
 > Go to localhost:8080 and verify 
+
+### Airflow User Data Pipeline
+
+![dag](png/user_processing.PNG)
+> Structure of the Airflow User Data Pipeline
+
+### Airflow Parallel DAG Pipeline
+
+![dag](png/parallel_dag.PNG)
+
+### Airflow DAG Example for Task Groups
+
+![dag](png/example_taskgroups.PNG)
+
