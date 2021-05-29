@@ -44,3 +44,58 @@ airflow scheduler
 
 ![dag](png/user_processing.PNG)
 > Structure of the Airflow DAG
+
+
+### Configure Local Executor 
+To execute multiple tasks in parallel where a task becomes a sub process in a single machine.
+
+1. Install Postgres for metastore
+```sh
+# To refresh your packages in your virtual env
+sudo apt update
+# To install Postgres
+sudo apt install postgresql
+```
+
+2. Connect to postgres and set password for postgres user
+```sh
+sudo -u postgres psql
+ALTER USER postgres PASSWORD 'postgres';
+```
+
+3. Install airflow postgres package
+```sh
+pip install 'apache-airflow[postgres]'
+```
+
+4. Edit airflow.cfg file for using postgres as Metastore and set LocalExecutor
+```sh
+sql_alchemy_conn = postgresql+psycopg2://postgres:postgres@localhost/postgres
+executor = LocalExecutor
+
+#Check if you are able to reach postgres database -
+airflow db check
+```
+
+5. Stop airflow webserver and scheduler
+
+6. Initiate Apache Airflow Metastore    
+```sh
+airflow db init
+```
+
+7. Re-create admin account
+```sh
+airflow users create \
+    --username admin \
+    --firstname Peter \
+    --lastname Parker \
+    --role Admin \
+    --email spiderman@superhero.org
+```
+8. Start the web server and scheduler
+```sh
+airflow webserver
+airflow scheduler
+```
+> Go to localhost:8080 and verify 
