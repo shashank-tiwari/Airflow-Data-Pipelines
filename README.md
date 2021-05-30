@@ -107,3 +107,6 @@ airflow scheduler
 
 ![dag](png/example_taskgroups.PNG)
 
+### Airflow DAG Example for XCOM and Branching
+
+![dag](png/xcom_dag.PNG)
