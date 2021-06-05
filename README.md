@@ -113,8 +113,8 @@ airflow scheduler
 
 ### Airflow Elastic Search Plugin Example 
 As part of this example, followings are covered - 
-> Created ElasticHook to connect to Elastic search and add a doc to index
-> Created PgToEsOperator to get data from postgres and add it to Elastic search
-> Created a dag to print elastic search info and get connections from postgres and add it to elastic search
+1. Created ElasticHook to connect to Elastic search and add a doc to index
+2. Created PgToEsOperator to get data from postgres and add it to Elastic search
+3. Created a dag to print elastic search info and get connections from postgres and add it to elastic search
 
 ![dag](png/elasticsearch_dag.PNG)
