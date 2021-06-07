@@ -1,4 +1,4 @@
-Steps for Airflow installation, setup and creating a very simple data pipeline based on udemy tutorial by Marc.
+This repo is to capture the steps for Airflow installation, setup and creating some simple data pipelines based on udemy tutorial by Marc.
 
 ### Installation & Quick Start 
 
