@@ -118,3 +118,5 @@ As part of this example, followings are covered -
 3. Created a dag to print elastic search info and get connections from postgres and add it to elastic search
 
 ![dag](png/elasticsearch_dag.PNG)
+
+- add more details here
